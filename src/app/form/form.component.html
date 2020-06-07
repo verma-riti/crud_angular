@@ -1,0 +1,32 @@
+<div>
+	<h1>Login Form</h1>
+</div>
+<div class="row">
+<form class="example-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <mat-form-field class="example-full-width">
+    <input type="text"
+           placeholder="Username"
+           matInput
+           formControlName="username">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input type="text"
+           placeholder="password"
+           matInput
+           formControlName="password">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input type="email"
+           placeholder="Email"
+           matInput
+           formControlName="email">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input type="number"
+           placeholder="Phone"
+           matInput
+           formControlName="phone">
+  </mat-form-field>
+  <button class="btn btn-primary" type="submit" >Login</button>
+</form>
+</div>
